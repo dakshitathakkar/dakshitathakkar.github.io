@@ -1,0 +1,54 @@
+/* Interaction layer in the portfolio's existing plum and coral palette. */
+html{scroll-padding-top:calc(var(--ds-header-height,100px) + 24px)}
+#dakshita-studio .ds-nav{position:sticky;top:0;z-index:30;background:var(--ds-cover);color:var(--ds-cream);padding-top:14px;padding-bottom:14px;box-shadow:0 0 0 transparent}
+#dakshita-studio .ds-nav.has-scrolled{box-shadow:0 8px 30px #160b2026;border-bottom-color:#f898834d}
+#dakshita-studio .ds-reading-progress{position:absolute;left:0;bottom:-1px;width:100%;height:2px;background:var(--ds-coral);transform:scaleX(0);transform-origin:left;pointer-events:none}
+#dakshita-studio .ds-nav nav a{position:relative;border:0;gap:7px}
+#dakshita-studio .ds-nav nav a::after{content:'';position:absolute;bottom:3px;left:0;right:0;height:1px;background:var(--ds-coral);transform:scaleX(0);transform-origin:left}
+#dakshita-studio .ds-nav nav a:is(:hover,:focus-visible,[aria-current="location"]){color:var(--ds-coral);border:0}
+#dakshita-studio .ds-nav nav a:is(:hover,:focus-visible,[aria-current="location"])::after{transform:scaleX(1)}
+#dakshita-studio .skip-link{position:fixed;z-index:50}
+#dakshita-studio .ds-spotlight{display:none;position:fixed;inset:0;z-index:20;pointer-events:none;opacity:0;background:radial-gradient(500px circle at var(--pointer-x,50%) var(--pointer-y,20%),light-dark(#af507212,#ffa88412),transparent 75%)}
+#dakshita-studio .ds-project{position:relative;isolation:isolate}
+#dakshita-studio .ds-project::before{content:'';position:absolute;inset:-16px;z-index:-1;border-radius:12px;background:light-dark(#eddee744,#a4729c0b);box-shadow:inset 0 1px 0 light-dark(#a456701a,#f6c6d51a),0 12px 30px #21102408;opacity:0;pointer-events:none}
+#dakshita-studio .ds-project:is(:hover,:focus-within)::before{opacity:1}
+#dakshita-studio .ds-project:is(:hover,:focus-within) h3{color:light-dark(#913b58,#f0a8b5)}
+#dakshita-studio .ds-project:focus-within .ds-tags span{background:light-dark(#e6cdd9,#57364f)}
+#dakshita-studio .ds-role{border-left-width:2px}
+#dakshita-studio .ds-role:hover{border-left-color:light-dark(#9b4b60,#ee9ca7)}
+#dakshita-studio .ds-role:hover h3{color:light-dark(#913b58,#f0a8b5)}
+#dakshita-studio .ds-role:hover::before{box-shadow:0 0 0 5px light-dark(#a34c6815,#ee9ca719)}
+#dakshita-studio summary:is(:hover,:focus-visible){color:light-dark(#913b58,#f0a8b5)}
+#dakshita-studio .ds-external-arrow{display:inline-block}
+#dakshita-studio .ds-hero-social a,#dakshita-studio .ds-contact-links>div a{position:relative}
+#dakshita-studio .ds-hero-social a::after,#dakshita-studio .ds-contact-links>div a::after{content:'';height:1px;position:absolute;bottom:6px;left:0;right:0;background:currentColor;transform:scaleX(0);transform-origin:left}
+#dakshita-studio .ds-hero-social a:is(:hover,:focus-visible)::after,#dakshita-studio .ds-contact-links>div a:is(:hover,:focus-visible)::after{transform:scaleX(1)}
+#dakshita-studio .ds-email:is(:hover,:focus-visible){border-bottom-color:light-dark(#9b4b60,#ee9ca7)}
+#dakshita-studio .ds-motion-toggle{font:inherit;font-size:12px;line-height:1.3;color:#e0cddb;background:transparent;border:1px solid #fff0d938;border-radius:20px;padding:10px 13px;min-height:44px;cursor:pointer}
+#dakshita-studio .ds-motion-toggle:hover{border-color:var(--ds-coral);color:var(--ds-coral)}
+#dakshita-studio .ds-motion-toggle:focus-visible{outline:3px solid var(--ds-coral);outline-offset:4px}
+#dakshita-studio .ds-motion-toggle:disabled{cursor:default;opacity:.75}
+#dakshita-studio .ds-motion-toggle[hidden]{display:none}
+@media(min-width:901px){#dakshita-studio .ds-section-heading{position:sticky;top:calc(var(--ds-header-height,80px) + 38px);align-self:start}}
+@media(hover:hover) and (pointer:fine){
+  #dakshita-studio[data-motion="on"] .ds-spotlight{display:block}
+  #dakshita-studio[data-motion="on"].pointer-active .ds-spotlight{opacity:1}
+  #dakshita-studio[data-motion="on"] .ds-photo{transform:perspective(900px) rotateX(var(--photo-x,0deg)) rotateY(var(--photo-y,0deg)) rotateZ(3deg);transition:transform 200ms ease-out,box-shadow 250ms ease-out}
+  #dakshita-studio[data-motion="on"] .ds-photo.is-tilting{box-shadow:12px 18px 30px #140a2338}
+  #dakshita-studio[data-motion="on"] .ds-project:hover{transform:translateY(-3px)}
+  #dakshita-studio .ds-project:hover .ds-tags span{background:light-dark(#e6cdd9,#57364f)}
+}
+@media(prefers-reduced-motion:no-preference){
+  #dakshita-studio[data-motion="on"] :is(.ds-project,.ds-role,.ds-nav,.ds-tags span,h3,summary,.ds-email,.ds-motion-toggle){transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 250ms ease,transform 250ms ease}
+  #dakshita-studio[data-motion="on"] :is(.ds-project,.ds-role,.ds-nav nav a,.ds-hero-social a,.ds-contact-links>div a)::before,
+  #dakshita-studio[data-motion="on"] :is(.ds-nav nav a,.ds-hero-social a,.ds-contact-links>div a)::after{transition:opacity 220ms ease,transform 220ms ease,box-shadow 220ms ease}
+  #dakshita-studio[data-motion="on"] .ds-spotlight{transition:opacity 400ms ease}
+  #dakshita-studio[data-motion="on"] .ds-external-arrow,#dakshita-studio[data-motion="on"] .ds-work-link>span{transition:transform 180ms ease}
+  #dakshita-studio[data-motion="on"] a:is(:hover,:focus-visible) .ds-external-arrow{transform:translate(3px,-3px)}
+  #dakshita-studio[data-motion="on"] .ds-work-link:is(:hover,:focus-visible)>span{transform:translate(4px,4px)}
+}
+html[data-motion="off"]{scroll-behavior:auto}
+#dakshita-studio[data-motion="off"] *,#dakshita-studio[data-motion="off"] *::before,#dakshita-studio[data-motion="off"] *::after{animation:none!important;transition:none!important}
+#dakshita-studio[data-motion="off"] .ds-photo{transform:rotate(3deg)}
+@media(prefers-reduced-motion:reduce){#dakshita-studio .ds-spotlight{display:none!important}#dakshita-studio .ds-photo{transform:rotate(3deg)!important}}
+@media(max-width:600px){#dakshita-studio .ds-nav{padding-top:10px;padding-bottom:10px}#dakshita-studio .ds-project::before{inset:-10px}#dakshita-studio .ds-footer .ds-back-top{flex-basis:auto;margin-left:auto}#dakshita-studio .ds-footer .ds-motion-toggle{order:4}#dakshita-studio .ds-footer{gap:14px}}

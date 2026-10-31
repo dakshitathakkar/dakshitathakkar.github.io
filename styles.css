@@ -1,0 +1,228 @@
+/* Personal cover, restrained technical typography. */
+:root{color-scheme:light dark}
+html{scroll-padding-top:24px}
+body{margin:0;background:light-dark(#eae2e4,#17141b)}
+button,a,summary{-webkit-tap-highlight-color:transparent}
+a:focus-visible,summary:focus-visible{outline:3px solid #cf795f;outline-offset:6px;border-radius:2px}
+::selection{background:#f89883;color:#301d30}
+
+#dakshita-studio{--ds-paper:light-dark(#faf5eb,#242027);--ds-ink:light-dark(#332639,#efe5d8);--ds-muted:light-dark(#6d5b6f,#c1b1c1);--ds-rule:light-dark(#d9cbd3,#544453);--ds-cover:light-dark(#3b2039,#301d30);--ds-cream:#fff0d9;--ds-coral:#f89883;--ds-note:light-dark(#edb9a8,#4d303e);font:14px/1.65 'DM Sans',Arial,sans-serif;color:var(--ds-ink);background:var(--ds-paper);width:100%;isolation:isolate}
+#dakshita-studio *{box-sizing:border-box}
+#dakshita-studio a{color:inherit;text-underline-offset:5px}
+#dakshita-studio .ds-cover{background:var(--ds-cover);color:var(--ds-cream);background-image:radial-gradient(#fff0d908 .7px,transparent .7px);background-size:5px 5px}
+#dakshita-studio .ds-nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:23px 42px;padding-right:95px;border-bottom:1px solid #fff0d92b}
+#dakshita-studio .ds-monogram{font:italic 30px/1 'DM Sans',Arial,sans-serif;text-decoration:none;letter-spacing:-2px}
+#dakshita-studio nav{display:flex;gap:25px;flex-wrap:wrap}
+#dakshita-studio nav a{font-size:11px;text-decoration:none;border-bottom:1px solid transparent;padding:5px 0}
+#dakshita-studio nav a:hover{border-color:var(--ds-coral);color:var(--ds-coral)}
+#dakshita-studio .ds-hero{padding:30px 42px 22px}
+#dakshita-studio .ds-preface{display:flex;justify-content:space-between;align-items:center;gap:18px}
+#dakshita-studio .ds-preface>span:first-child{font:9px/1.5 'DM Sans',sans-serif;letter-spacing:1.8px}
+#dakshita-studio .ds-hand{font:400 23px/1.1 'DM Sans',Arial,sans-serif}
+#dakshita-studio .ds-hello{transform:rotate(-7deg);padding-right:25px;color:var(--ds-coral)}
+#dakshita-studio h1{font:400 clamp(75px,15vw,132px)/1.06 'DM Sans',Arial,sans-serif;letter-spacing:-6px;margin:8px 0 6px;color:var(--ds-coral)}
+#dakshita-studio .ds-name-dot{color:var(--ds-cream)}
+#dakshita-studio .ds-hero-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:40px;align-items:center}
+#dakshita-studio .ds-lead{font:400 30px/1.18 'DM Sans',Arial,sans-serif;letter-spacing:-.5px;margin:20px 0 17px}
+#dakshita-studio .ds-lead em{font-weight:400;color:var(--ds-coral)}
+#dakshita-studio .ds-body{font-size:12px;line-height:1.8;max-width:290px;color:#e0cddb;margin:0}
+#dakshita-studio .ds-work-link{display:inline-flex;gap:25px;align-items:center;font-size:12px;text-decoration:none;margin-top:23px;padding-bottom:8px;border-bottom:1px solid var(--ds-coral)}
+#dakshita-studio .ds-work-link span{font-size:23px;line-height:1}
+#dakshita-studio .ds-location{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.3px;margin-top:26px;color:#d6bacb}
+#dakshita-studio .ds-location-dot{width:5px;height:5px;border-radius:50%;background:var(--ds-coral)}
+#dakshita-studio .ds-photo{margin:3px 6px 0 0;padding:11px 11px 13px;background:#f4e6d4;color:#432b40;transform:rotate(4deg);position:relative;box-shadow:8px 9px 0 #20102055}
+#dakshita-studio .ds-photo-space{height:219px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;background:#d0aeab;background-image:linear-gradient(135deg,transparent 49.7%,#f6e3c97d 50%,transparent 50.3%)}
+#dakshita-studio .ds-photo-label{position:absolute;top:13px;left:13px;right:13px;font:8px/1.5 'DM Sans',sans-serif;letter-spacing:1px}
+#dakshita-studio .ds-photo-initials{font:italic 118px/.9 'DM Sans',Arial,sans-serif;color:#694556;letter-spacing:-15px;margin-left:-10px}
+#dakshita-studio .ds-photo-initials span{color:#946475}
+#dakshita-studio .ds-photo-placeholder{position:absolute;bottom:14px;left:13px;right:13px;font-size:11px;border-top:1px solid #69455655;padding-top:8px;text-align:center}
+#dakshita-studio figcaption.ds-hand{font-size:20px;text-align:center;padding-top:11px}
+#dakshita-studio .ds-tape{position:absolute;z-index:1;width:90px;height:25px;background:#f3c3a5d9;top:-13px;left:calc(50% - 45px);transform:rotate(-11deg);border-left:2px dotted #dba58b;border-right:2px dotted #dba58b}
+#dakshita-studio .ds-cover-foot{margin-top:39px;padding-top:18px;border-top:1px solid #fff0d92b;display:flex;align-items:center;justify-content:space-between;gap:18px}
+#dakshita-studio .ds-cover-foot>span:first-child{font-size:8px;letter-spacing:1.2px}
+#dakshita-studio .ds-footnote{font-size:18px;color:var(--ds-coral);transform:rotate(-2deg)}
+#dakshita-studio .ds-section{display:grid;grid-template-columns:190px minmax(0,1fr);gap:34px;padding:55px 42px}
+#dakshita-studio .ds-kicker{font:9px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:1.4px}
+#dakshita-studio h2{font:400 33px/1.13 'DM Sans',Arial,sans-serif;letter-spacing:-.6px;margin:15px 0}
+#dakshita-studio h2 em{font-weight:400;color:light-dark(#9b4b60,#ee9ca7)}
+#dakshita-studio .ds-section-heading>p{font-size:11px;color:var(--ds-muted);line-height:1.75}
+#dakshita-studio .ds-margin-note{display:block;margin-top:44px;color:light-dark(#9b4b60,#ee9ca7);transform:rotate(-6deg);font-size:22px}
+#dakshita-studio .ds-project-meta{font-size:8px;letter-spacing:1.15px;color:var(--ds-muted);display:flex;justify-content:space-between;gap:12px}
+#dakshita-studio h3{font:500 19px/1.3 'DM Sans',Arial,sans-serif;letter-spacing:-.6px;margin:12px 0}
+#dakshita-studio .ds-project>p{font-size:12px;line-height:1.8;color:var(--ds-muted);margin:0 0 14px}
+#dakshita-studio .ds-tags{display:flex;gap:7px;flex-wrap:wrap}
+#dakshita-studio .ds-tags span{padding:3px 8px;border-radius:3px;background:light-dark(#eedfe5,#432f42);color:light-dark(#753b58,#efbfce);font-size:9px}
+#dakshita-studio details{margin-top:18px}
+#dakshita-studio summary{display:flex;justify-content:space-between;gap:10px;font-size:11px;list-style:none;padding:9px 0}
+#dakshita-studio summary::-webkit-details-marker{display:none}
+#dakshita-studio .ds-outline{padding:10px 14px;border-left:2px solid light-dark(#c67986,#ee9ca7);background:light-dark(#f0e8e5,#2d2730);font-size:11px}
+#dakshita-studio .ds-outline p{margin:0 0 10px}
+#dakshita-studio .ds-outline p:last-child{margin-bottom:0}
+#dakshita-studio .ds-project+.ds-project{border-top:1px solid var(--ds-rule);margin-top:25px;padding-top:26px}
+#dakshita-studio .ds-content-note{color:var(--ds-muted);font-size:9px;margin:22px 0 0;border-top:1px solid var(--ds-rule);padding-top:14px}
+#dakshita-studio .ds-notes-section{background:var(--ds-note);padding:30px 42px 33px;position:relative;border-top:1px solid var(--ds-rule);border-bottom:1px solid var(--ds-rule)}
+#dakshita-studio .ds-notes-top{display:flex;justify-content:space-between;gap:15px;align-items:center}
+#dakshita-studio .ds-notes-top .ds-hand{font-size:18px;transform:rotate(-3deg)}
+#dakshita-studio .ds-notes-section h2{font-size:44px;margin:28px 0 25px}
+#dakshita-studio .ds-notes-section h2 em{color:inherit}
+#dakshita-studio .ds-notes-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px}
+#dakshita-studio .ds-notes-bottom p{font-size:11px;margin:0}
+#dakshita-studio .ds-note-label{font-size:8px;letter-spacing:1px;max-width:160px;line-height:1.7;text-align:right}
+#dakshita-studio .ds-about-section{padding-top:42px;padding-bottom:42px}
+#dakshita-studio .ds-about-copy p{font-size:12px;line-height:1.9;margin:0 0 15px}
+#dakshita-studio .ds-about-copy .ds-about-prompt{color:var(--ds-muted);font-size:10px}
+#dakshita-studio .ds-about-copy>.ds-hand{display:block;transform:rotate(-3deg);color:light-dark(#9b4b60,#ee9ca7);margin-top:22px}
+#dakshita-studio .ds-footer{background:var(--ds-cover);color:var(--ds-cream);display:flex;align-items:center;gap:23px;padding:24px 42px;font-size:10px;line-height:1.7}
+#dakshita-studio .ds-draft{margin-left:auto;font-size:8px;color:#d9bfcf;text-align:right}
+@media(max-width:600px){#dakshita-studio .ds-nav{padding:18px 24px;gap:13px}#dakshita-studio nav{gap:14px}#dakshita-studio nav a{font-size:10px}#dakshita-studio .ds-hero{padding:25px 24px}#dakshita-studio .ds-preface{align-items:start}#dakshita-studio .ds-preface>span:first-child{max-width:160px;font-size:8px}#dakshita-studio .ds-hello{font-size:19px;padding-right:0}#dakshita-studio h1{font-size:clamp(65px,16vw,100px);letter-spacing:-4px;margin:17px 0}#dakshita-studio .ds-hero-grid{gap:25px;grid-template-columns:1fr}#dakshita-studio .ds-intro{max-width:390px}#dakshita-studio .ds-lead{font-size:31px;margin-top:0}#dakshita-studio .ds-body{max-width:370px}#dakshita-studio .ds-photo{width:245px;max-width:92%;justify-self:center;margin:15px 0 0}#dakshita-studio .ds-cover-foot{flex-direction:column;align-items:start;margin-top:32px;gap:14px}#dakshita-studio .ds-section{grid-template-columns:1fr;padding:35px 24px;gap:25px}#dakshita-studio .ds-section-heading h2 br{display:none}#dakshita-studio .ds-section-heading>p{display:none}#dakshita-studio .ds-margin-note{display:none}#dakshita-studio h2{font-size:31px}#dakshita-studio .ds-notes-section{padding:27px 24px}#dakshita-studio .ds-notes-top{flex-wrap:wrap}#dakshita-studio .ds-notes-section h2{font-size:36px}#dakshita-studio .ds-notes-bottom{display:block}#dakshita-studio .ds-note-label{display:block;text-align:left;margin-top:18px;max-width:none}#dakshita-studio .ds-footer{padding:22px 24px;flex-wrap:wrap;gap:18px}#dakshita-studio .ds-draft{text-align:left;margin:0;width:100%}}
+@media(prefers-reduced-motion:no-preference){#dakshita-studio a{transition:color .15s}#dakshita-studio .ds-photo{transition:transform .25s}#dakshita-studio .ds-photo:hover{transform:rotate(1deg)}}
+
+/* Production typography and page scale. */
+#dakshita-studio{max-width:1180px;margin:0 auto;font-size:16px}
+#dakshita-studio .ds-nav{padding:26px 64px}
+#dakshita-studio .ds-monogram{font-style:normal;font-weight:650;letter-spacing:-2px}
+#dakshita-studio nav{gap:32px}
+#dakshita-studio nav a{font-size:14px;min-height:44px;display:inline-flex;align-items:center}
+#dakshita-studio nav a[aria-current="location"]{color:var(--ds-coral);border-bottom-color:var(--ds-coral)}
+#dakshita-studio .ds-hero{padding:42px 64px 28px}
+#dakshita-studio .ds-preface>span:first-child{font-size:11px;letter-spacing:1.8px}
+#dakshita-studio .ds-hand{font-family:'DM Sans',Arial,sans-serif;font-size:15px;font-weight:400;font-style:italic;line-height:1.5;transform:none}
+#dakshita-studio .ds-hello{font-size:16px;transform:rotate(-4deg)}
+#dakshita-studio h1{font-weight:650;font-size:clamp(76px,13vw,144px);letter-spacing:-9px;line-height:1.1;margin:15px 0 26px}
+#dakshita-studio .ds-hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:68px}
+#dakshita-studio .ds-lead{font-weight:500;font-size:39px;letter-spacing:-1.3px;line-height:1.2;margin:12px 0 23px}
+#dakshita-studio em{font-style:normal}
+#dakshita-studio .ds-body{font-size:16px;max-width:385px;line-height:1.85}
+#dakshita-studio .ds-work-link{font-size:15px;min-height:44px;margin-top:26px}
+#dakshita-studio .ds-location{font-size:12px;margin-top:25px}
+#dakshita-studio .ds-photo{max-width:350px;width:100%;justify-self:center;margin-right:9px;transform:rotate(3deg)}
+#dakshita-studio .ds-photo-space{height:290px}
+#dakshita-studio .ds-photo-label{font-size:10px;letter-spacing:1.4px;top:17px;left:17px}
+#dakshita-studio .ds-photo-initials{font-style:normal;font-size:110px;font-weight:550;letter-spacing:-17px}
+#dakshita-studio .ds-photo-placeholder{font-size:13px;padding-top:12px;bottom:16px}
+#dakshita-studio figcaption.ds-hand{font-size:13px;padding:15px 0 4px}
+#dakshita-studio .ds-cover-foot{margin-top:49px;padding-top:23px}
+#dakshita-studio .ds-cover-foot>span:first-child{font-size:10px}
+#dakshita-studio .ds-footnote{font-size:13px}
+#dakshita-studio .ds-section{grid-template-columns:255px minmax(0,1fr);gap:65px;padding:75px 64px}
+#dakshita-studio .ds-kicker{font-size:11px;letter-spacing:1.5px}
+#dakshita-studio h2{font-weight:500;font-size:35px;letter-spacing:-1.25px;line-height:1.2;margin-top:20px}
+#dakshita-studio .ds-section-heading>p{font-size:14px}
+#dakshita-studio .ds-margin-note{font-size:15px;margin-top:36px}
+#dakshita-studio .ds-project-meta{font-size:10px}
+#dakshita-studio h3{font-size:23px;font-weight:550;letter-spacing:-.7px;line-height:1.4;margin-top:16px}
+#dakshita-studio .ds-project>p{font-size:15px;line-height:1.85}
+#dakshita-studio .ds-tags span{font-size:12px;padding:4px 10px}
+#dakshita-studio summary{cursor:pointer;font-size:14px;min-height:44px;padding:12px 0;align-items:center}
+#dakshita-studio summary>span{font-size:20px;transition:transform .15s}
+#dakshita-studio details[open] summary>span{transform:rotate(45deg)}
+#dakshita-studio .ds-outline{font-size:14px;padding:18px 20px}
+#dakshita-studio .ds-outline p{line-height:1.8;margin-bottom:14px}
+#dakshita-studio .ds-outline p:last-child{margin-bottom:0}
+#dakshita-studio .ds-project+.ds-project{margin-top:32px;padding-top:32px}
+#dakshita-studio .ds-content-note{font-size:12px;line-height:1.7;padding-top:18px;margin-top:28px}
+#dakshita-studio .ds-notes-section{padding:42px 64px}
+#dakshita-studio .ds-notes-top .ds-hand{font-size:14px}
+#dakshita-studio .ds-notes-section h2{font-size:clamp(30px,5vw,54px);line-height:1.17;letter-spacing:-1.8px;margin:34px 0}
+#dakshita-studio .ds-notes-bottom p{font-size:14px;line-height:1.85}
+#dakshita-studio .ds-note-label{font-size:10px;max-width:200px}
+#dakshita-studio .ds-about-copy p{font-size:16px}
+#dakshita-studio .ds-about-copy .ds-about-prompt{font-size:14px}
+#dakshita-studio .ds-about-copy>.ds-hand{font-size:16px}
+#dakshita-studio .ds-footer{font-size:12px;padding:30px 64px;gap:30px}
+#dakshita-studio .ds-back-top{margin-left:auto;text-decoration:none;padding:12px 0;font-size:13px}
+#dakshita-studio .skip-link{position:absolute;top:10px;left:10px;transform:translateY(-200%);z-index:10;padding:10px 16px;background:#fff0d9;color:#3b2039}
+#dakshita-studio .skip-link:focus{transform:translateY(0)}
+@media(min-width:1250px){#dakshita-studio{box-shadow:0 0 0 1px light-dark(#ddd2d8,#3b303d)}}
+@media(max-width:900px) and (min-width:601px){#dakshita-studio .ds-nav,#dakshita-studio .ds-hero,#dakshita-studio .ds-notes-section,#dakshita-studio .ds-footer{padding-left:40px;padding-right:40px}#dakshita-studio .ds-section{padding:55px 40px;grid-template-columns:195px minmax(0,1fr);gap:35px}#dakshita-studio .ds-hero-grid{gap:35px}#dakshita-studio .ds-lead{font-size:30px}#dakshita-studio .ds-photo-space{height:245px}#dakshita-studio .ds-body{font-size:14px}#dakshita-studio h2{font-size:30px}#dakshita-studio .ds-footnote{max-width:210px}}
+@media(max-width:600px){#dakshita-studio .ds-nav{padding:18px 24px;align-items:center;gap:15px}#dakshita-studio nav{gap:13px}#dakshita-studio nav a{font-size:11px}#dakshita-studio .ds-hero{padding:28px 24px}#dakshita-studio .ds-preface>span:first-child{font-size:9px;max-width:160px}#dakshita-studio .ds-hello{font-size:13px;max-width:100px}#dakshita-studio h1{font-size:clamp(58px,14.8vw,90px);letter-spacing:-4px;margin:22px 0 25px}#dakshita-studio .ds-hero-grid{grid-template-columns:1fr;gap:28px}#dakshita-studio .ds-lead{font-size:31px}#dakshita-studio .ds-body{font-size:15px}#dakshita-studio .ds-photo{max-width:280px;width:90%;margin:15px 0 0}#dakshita-studio .ds-photo-space{height:255px}#dakshita-studio .ds-cover-foot{gap:14px;margin-top:36px}#dakshita-studio .ds-cover-foot>span:first-child{font-size:9px}#dakshita-studio .ds-footnote{font-size:13px}#dakshita-studio .ds-section{padding:40px 24px;grid-template-columns:1fr;gap:20px}#dakshita-studio h2{font-size:30px}#dakshita-studio h3{font-size:22px}#dakshita-studio .ds-kicker{font-size:10px}#dakshita-studio .ds-notes-section{padding:30px 24px}#dakshita-studio .ds-notes-top .ds-hand{font-size:12px}#dakshita-studio .ds-notes-section h2{font-size:33px;letter-spacing:-1.1px}#dakshita-studio .ds-notes-bottom p{font-size:14px}#dakshita-studio .ds-note-label{font-size:10px;max-width:none}#dakshita-studio .ds-about-copy p{font-size:15px}#dakshita-studio .ds-footer{padding:24px;gap:18px;flex-wrap:wrap}#dakshita-studio .ds-footer>span:nth-child(2){font-size:11px}#dakshita-studio .ds-back-top{margin-left:0;flex-basis:100%}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Résumé-backed content: career, speaking, education, and contact. */
+#dakshita-studio .ds-hero-social{display:flex;flex-wrap:wrap;gap:22px;margin-top:15px}
+#dakshita-studio .ds-hero-social a{font-size:13px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;color:#e0cddb}
+#dakshita-studio .ds-hero-social a:hover{color:var(--ds-coral)}
+#dakshita-studio .ds-location{margin-top:12px}
+#dakshita-studio .ds-project strong{color:var(--ds-ink);font-weight:600}
+#dakshita-studio .ds-experience-section{border-top:1px solid var(--ds-rule)}
+#dakshita-studio .ds-role{padding:0 0 29px 23px;border-left:1px solid var(--ds-rule);position:relative}
+#dakshita-studio .ds-role:before{content:'';width:7px;height:7px;border-radius:50%;background:light-dark(#9b4b60,#ee9ca7);position:absolute;left:-4px;top:6px}
+#dakshita-studio .ds-role time{font-size:11px;color:var(--ds-muted);letter-spacing:1px}
+#dakshita-studio .ds-role h3{font-size:20px;margin:9px 0 2px}
+#dakshita-studio .ds-role p{font-size:14px;line-height:1.85;color:var(--ds-muted);margin:9px 0 0}
+#dakshita-studio .ds-role p.ds-company{margin:0;color:light-dark(#873e59,#ee9ca7);font-size:14px;font-weight:500}
+#dakshita-studio .ds-recognition{border-top:1px solid var(--ds-rule);padding-top:24px;margin-top:6px}
+#dakshita-studio .ds-recognition p{font-size:14px;line-height:1.8;margin:10px 0}
+#dakshita-studio .ds-toolkit{border-top:1px solid var(--ds-rule);padding-top:9px;margin-top:23px}
+#dakshita-studio .ds-talk-event{font-size:11px;letter-spacing:1px;margin-top:30px}
+#dakshita-studio .ds-notes-section h2{font-size:clamp(30px,4.5vw,49px);margin:15px 0 22px}
+#dakshita-studio .ds-education{border-top:1px solid var(--ds-rule);margin-top:26px;padding-top:23px}
+#dakshita-studio .ds-education h3{font-size:18px;margin:10px 0 5px}
+#dakshita-studio .ds-education p{font-size:14px;color:var(--ds-muted)}
+#dakshita-studio .ds-contact-section{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;padding:48px 64px;background:light-dark(#eee3e6,#302430);border-top:1px solid var(--ds-rule);align-items:center}
+#dakshita-studio .ds-contact-section p{font-size:14px;color:var(--ds-muted);max-width:300px}
+#dakshita-studio .ds-contact-links{min-width:0}
+#dakshita-studio .ds-email{font-size:clamp(14px,1.7vw,20px);display:flex;justify-content:space-between;gap:14px;overflow-wrap:anywhere;padding:14px 0;border-bottom:1px solid var(--ds-rule);text-decoration:none}
+#dakshita-studio .ds-contact-links>div{display:flex;gap:24px;flex-wrap:wrap;margin-top:15px}
+#dakshita-studio .ds-contact-links>div a{font-size:14px;padding:10px 0;text-decoration:none;min-height:44px}
+#dakshita-studio .ds-contact-links a:hover{color:light-dark(#9b4b60,#ee9ca7)}
+@media(max-width:900px) and (min-width:601px){#dakshita-studio .ds-contact-section{padding:40px;gap:25px}}
+@media(max-width:600px){#dakshita-studio .ds-nav{align-items:flex-start}#dakshita-studio .ds-nav .ds-monogram{padding-top:5px}#dakshita-studio nav{justify-content:flex-end;column-gap:16px;row-gap:0}#dakshita-studio nav a{font-size:12px}#dakshita-studio .ds-contact-section{grid-template-columns:1fr;padding:34px 24px;gap:15px}#dakshita-studio .ds-email{font-size:14px}#dakshita-studio .ds-talk-event{font-size:10px;line-height:1.7}#dakshita-studio .ds-notes-section h2{font-size:30px;letter-spacing:-.8px}#dakshita-studio .ds-role h3{font-size:19px}}
+
+/* Longer personal copy with comfortable reading widths. */
+#dakshita-studio .ds-body{max-width:440px}
+#dakshita-studio .ds-body+.ds-body{margin-top:18px}
+#dakshita-studio .ds-hero-grid{align-items:start}
+#dakshita-studio .ds-photo{margin-top:25px}
+#dakshita-studio .ds-work-intro{margin:0 0 36px;padding-bottom:24px;border-bottom:1px solid var(--ds-rule)}
+#dakshita-studio .ds-work-intro p,#dakshita-studio .ds-career-intro{font-size:15px;line-height:1.9;color:var(--ds-muted);max-width:64ch;margin:0 0 16px}
+#dakshita-studio .ds-work-intro p:last-child{margin-bottom:0}
+#dakshita-studio .ds-career-intro{margin-bottom:30px}
+#dakshita-studio .ds-project>p,#dakshita-studio .ds-outline p{max-width:66ch}
+#dakshita-studio .ds-speaking-copy{max-width:730px;margin-top:26px;padding-top:22px;border-top:1px solid light-dark(#6f36482b,#efc8d138)}
+#dakshita-studio .ds-speaking-copy p{font-size:15px;line-height:1.85;margin:0 0 16px}
+#dakshita-studio .ds-speaking-copy p:last-child{margin-bottom:0}
+#dakshita-studio .ds-about-copy>p{max-width:64ch;margin-bottom:22px}
+#dakshita-studio .ds-about-copy>h3{font-size:19px;font-weight:550;margin:30px 0 16px}
+#dakshita-studio .ds-contact-section p{max-width:38ch;line-height:1.85}
+@media(max-width:600px){#dakshita-studio .ds-photo{margin-top:8px}#dakshita-studio .ds-work-intro p,#dakshita-studio .ds-career-intro,#dakshita-studio .ds-speaking-copy p{font-size:14px}#dakshita-studio .ds-about-copy>h3{font-size:18px}}
+
+/* Agent-engineering scope in the introduction. */
+#dakshita-studio .ds-hero-proof{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #fff0d92b;padding-top:18px;margin-top:24px;font-size:12px;color:#e0cddb}
+#dakshita-studio .ds-hero-proof span{display:flex;align-items:baseline;gap:7px}
+#dakshita-studio .ds-hero-proof strong{font-size:23px;font-weight:550;color:var(--ds-coral);letter-spacing:-.5px}
+@media(max-width:600px){#dakshita-studio .ds-hero-proof{gap:14px;font-size:11px}#dakshita-studio .ds-hero-proof strong{font-size:21px}}
+
+/* Case study typography. */
+#dakshita-studio .ds-case-study h4{font-size:12px;line-height:1.5;font-weight:600;letter-spacing:.4px;color:var(--ds-ink);margin:23px 0 7px}
+#dakshita-studio .ds-case-study p{font-size:15px;line-height:1.85;color:var(--ds-muted);max-width:66ch;margin:0 0 14px}
+
+/* Compact project previews with native, keyboard-accessible disclosures. */
+#dakshita-studio .ds-project .ds-project-impact{padding:10px 13px;margin:16px 0;border-left:2px solid light-dark(#9b4b60,#ee9ca7);background:light-dark(#f0e8e5,#2d2730);font-size:14px;line-height:1.65}
+#dakshita-studio .ds-impact-label{display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:light-dark(#873e59,#ee9ca7);margin-bottom:3px}
+#dakshita-studio .ds-case-disclosure{margin-top:9px}
+#dakshita-studio .ds-case-disclosure summary{color:light-dark(#873e59,#ee9ca7);padding:8px 0}
+#dakshita-studio .ds-case-disclosure summary b{font-weight:500}
+#dakshita-studio .ds-case-disclosure .ds-case-close{display:none}
+#dakshita-studio .ds-case-disclosure[open] .ds-case-open{display:none}
+#dakshita-studio .ds-case-disclosure[open] .ds-case-close{display:inline}
+#dakshita-studio .ds-case-disclosure .ds-case-study h4:first-child{margin-top:0}
+#dakshita-studio .ds-case-disclosure .ds-case-study p:last-child{margin-bottom:0}
+
+/* Selected portrait and conference photograph. */
+#dakshita-studio .ds-photo-space{height:auto;aspect-ratio:4/5;background:#e8e0da;display:block}
+#dakshita-studio .ds-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+#dakshita-studio .ds-speaking-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:center;margin-top:30px}
+#dakshita-studio .ds-stage-photo{margin:0;min-width:0}
+#dakshita-studio .ds-talk-video{display:block;text-decoration:none;border-radius:4px;overflow:hidden;background:#301d30;color:#fff0d9;box-shadow:0 8px 24px #20102018}
+#dakshita-studio .ds-talk-video img{display:block;width:100%;height:auto;aspect-ratio:4/3}
+#dakshita-studio .ds-watch-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;font-size:13px;line-height:1.5}
+#dakshita-studio .ds-watch-bar>span:first-child{display:flex;align-items:center;gap:10px}
+#dakshita-studio .ds-watch-bar>span:last-child{white-space:nowrap;font-size:12px;color:#e0cddb}
+#dakshita-studio .ds-play-icon{font-size:12px;color:#f89883}
+#dakshita-studio .ds-talk-video:hover .ds-watch-bar,#dakshita-studio .ds-talk-video:focus-visible .ds-watch-bar{background:#432b40}
+#dakshita-studio .ds-stage-photo figcaption{font-size:12px;line-height:1.6;margin-top:10px;opacity:.85}
+#dakshita-studio .ds-speaking-layout .ds-speaking-copy{margin:0;padding:0;border:0;max-width:none}
+@media(max-width:800px){#dakshita-studio .ds-speaking-layout{grid-template-columns:1fr;gap:24px}}
+@media(max-width:600px){#dakshita-studio .ds-watch-bar{padding:13px 12px;font-size:12px}#dakshita-studio .ds-watch-bar>span:last-child{font-size:11px}}
