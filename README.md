@@ -6,7 +6,9 @@ Live website: https://dakshitathakkar.github.io/
 
 ## Updating the site
 
-Edit `index.html`, `styles.css`, `interactions.css`, or `site.js`. Images live in `images/`. Push changes to `main`; GitHub Pages publishes the repository root. No build step is required.
+Pages: `index.html` (home), `work.html`, `experience.html`, `speaking.html`, `about.html`, and `contact.html`.
+
+Edit the relevant HTML page for content. Shared styling and interactions live in `styles.css`, `interactions.css`, and `site.js`. Images live in `images/`. Push changes to `main`; GitHub Pages publishes the repository root. No build step is required.
 
 ## Local preview
 

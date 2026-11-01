@@ -1,16 +1,20 @@
 // Progressive enhancements. Links and disclosures work without JavaScript.
 (() => {
+  const oldSections = { '#ds-work': 'work.html', '#ds-experience': 'experience.html', '#ds-talk': 'speaking.html', '#ds-about': 'about.html', '#ds-contact': 'contact.html' };
+  if (document.querySelector('[data-page="home"]') && oldSections[location.hash]) {
+    location.replace(oldSections[location.hash] + location.hash);
+    return;
+  }
   const root = document.getElementById('dakshita-studio');
   const header = root.querySelector('.ds-nav');
   const progress = root.querySelector('.ds-reading-progress');
   const photo = root.querySelector('.ds-photo');
   const motionButton = root.querySelector('.ds-motion-toggle');
-  const links = [...header.querySelectorAll('nav a')];
-  const sections = links.map(link => document.querySelector(link.hash));
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const pointer = matchMedia('(hover: hover) and (pointer: fine)');
   let userMotion = true, motion = false, frame = 0, pointerFrame = 0;
   let pointerPosition = null, headerHeight = header.offsetHeight;
+  try { userMotion = localStorage.getItem('ds-motion') !== 'off'; } catch {}
   const animations = new Set();
   function animate(element, frames, options) {
     if (!motion || !element.animate) return;
@@ -19,9 +23,9 @@
     animation.finished.catch(() => {}).finally(() => animations.delete(animation));
   }
   function resetPhoto() {
-    photo.style.removeProperty('--photo-x');
-    photo.style.removeProperty('--photo-y');
-    photo.classList.remove('is-tilting');
+    photo?.style.removeProperty('--photo-x');
+    photo?.style.removeProperty('--photo-y');
+    photo?.classList.remove('is-tilting');
   }
   function updateMotion() {
     motion = userMotion && !reduce.matches;
@@ -37,7 +41,7 @@
       resetPhoto();
     }
   }
-  motionButton.addEventListener('click', () => { userMotion = !userMotion; updateMotion(); });
+  motionButton.addEventListener('click', () => { userMotion = !userMotion; try { localStorage.setItem('ds-motion', userMotion ? 'on' : 'off'); } catch {} updateMotion(); });
   reduce.addEventListener('change', updateMotion);
   pointer.addEventListener('change', () => {
     if (!pointer.matches) { root.classList.remove('pointer-active'); resetPhoto(); }
@@ -49,14 +53,6 @@
     const ratio = scrollable > 0 ? Math.min(1, Math.max(0, scrollY / scrollable)) : 0;
     progress.style.transform = `scaleX(${ratio})`;
     header.classList.toggle('has-scrolled', scrollY > 24);
-    let active = -1;
-    const marker = headerHeight + Math.min(160, innerHeight * .22);
-    sections.forEach((section, i) => { if (section.getBoundingClientRect().top <= marker) active = i; });
-    if (ratio > .995) active = sections.length - 1;
-    links.forEach((link, i) => {
-      if (i === active) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
   }
   function queueScroll() { if (!frame) frame = requestAnimationFrame(updateScroll); }
   function measureHeader() {
@@ -81,7 +77,7 @@
     });
   }, { passive: true });
   root.addEventListener('pointerleave', () => { pointerPosition = null; root.classList.remove('pointer-active'); });
-  photo.addEventListener('pointermove', event => {
+  photo?.addEventListener('pointermove', event => {
     if (!motion || !pointer.matches || event.pointerType === 'touch') return;
     const bounds = photo.getBoundingClientRect();
     const x = Math.max(-.5, Math.min(.5, (event.clientX - bounds.left) / bounds.width - .5));
@@ -90,7 +86,7 @@
     photo.style.setProperty('--photo-y', `${x * 10}deg`);
     photo.classList.add('is-tilting');
   }, { passive: true });
-  photo.addEventListener('pointerleave', resetPhoto);
+  photo?.addEventListener('pointerleave', resetPhoto);
   // Animate once on entry without hiding content or delaying keyboard access.
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
