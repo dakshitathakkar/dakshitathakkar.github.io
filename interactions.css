@@ -24,11 +24,6 @@ html{scroll-padding-top:calc(var(--ds-header-height,100px) + 24px)}
 #dakshita-studio .ds-hero-social a::after,#dakshita-studio .ds-contact-links>div a::after{content:'';height:1px;position:absolute;bottom:6px;left:0;right:0;background:currentColor;transform:scaleX(0);transform-origin:left}
 #dakshita-studio .ds-hero-social a:is(:hover,:focus-visible)::after,#dakshita-studio .ds-contact-links>div a:is(:hover,:focus-visible)::after{transform:scaleX(1)}
 #dakshita-studio .ds-email:is(:hover,:focus-visible){border-bottom-color:light-dark(#9b4b60,#ee9ca7)}
-#dakshita-studio .ds-motion-toggle{font:inherit;font-size:12px;line-height:1.3;color:#e0cddb;background:transparent;border:1px solid #fff0d938;border-radius:20px;padding:10px 13px;min-height:44px;cursor:pointer}
-#dakshita-studio .ds-motion-toggle:hover{border-color:var(--ds-coral);color:var(--ds-coral)}
-#dakshita-studio .ds-motion-toggle:focus-visible{outline:3px solid var(--ds-coral);outline-offset:4px}
-#dakshita-studio .ds-motion-toggle:disabled{cursor:default;opacity:.75}
-#dakshita-studio .ds-motion-toggle[hidden]{display:none}
 @media(min-width:901px){#dakshita-studio .ds-section-heading{position:sticky;top:calc(var(--ds-header-height,80px) + 38px);align-self:start}}
 @media(hover:hover) and (pointer:fine){
   #dakshita-studio[data-motion="on"] .ds-spotlight{display:block}
@@ -39,7 +34,7 @@ html{scroll-padding-top:calc(var(--ds-header-height,100px) + 24px)}
   #dakshita-studio .ds-project:hover .ds-tags span{background:light-dark(#e6cdd9,#57364f)}
 }
 @media(prefers-reduced-motion:no-preference){
-  #dakshita-studio[data-motion="on"] :is(.ds-project,.ds-role,.ds-nav,.ds-tags span,h3,summary,.ds-email,.ds-motion-toggle){transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 250ms ease,transform 250ms ease}
+  #dakshita-studio[data-motion="on"] :is(.ds-project,.ds-role,.ds-nav,.ds-tags span,h3,summary,.ds-email){transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease,box-shadow 250ms ease,transform 250ms ease}
   #dakshita-studio[data-motion="on"] :is(.ds-project,.ds-role,.ds-nav nav a,.ds-hero-social a,.ds-contact-links>div a)::before,
   #dakshita-studio[data-motion="on"] :is(.ds-nav nav a,.ds-hero-social a,.ds-contact-links>div a)::after{transition:opacity 220ms ease,transform 220ms ease,box-shadow 220ms ease}
   #dakshita-studio[data-motion="on"] .ds-spotlight{transition:opacity 400ms ease}
@@ -51,4 +46,4 @@ html[data-motion="off"]{scroll-behavior:auto}
 #dakshita-studio[data-motion="off"] *,#dakshita-studio[data-motion="off"] *::before,#dakshita-studio[data-motion="off"] *::after{animation:none!important;transition:none!important}
 #dakshita-studio[data-motion="off"] .ds-photo{transform:rotate(3deg)}
 @media(prefers-reduced-motion:reduce){#dakshita-studio .ds-spotlight{display:none!important}#dakshita-studio .ds-photo{transform:rotate(3deg)!important}}
-@media(max-width:600px){#dakshita-studio .ds-nav{padding-top:10px;padding-bottom:10px}#dakshita-studio .ds-project::before{inset:-10px}#dakshita-studio .ds-footer .ds-back-top{flex-basis:auto;margin-left:auto}#dakshita-studio .ds-footer .ds-motion-toggle{order:4}#dakshita-studio .ds-footer{gap:14px}}
+@media(max-width:600px){#dakshita-studio .ds-nav{padding-top:10px;padding-bottom:10px}#dakshita-studio .ds-project::before{inset:-10px}#dakshita-studio .ds-footer .ds-back-top{flex-basis:auto;margin-left:auto}#dakshita-studio .ds-footer{gap:14px}}

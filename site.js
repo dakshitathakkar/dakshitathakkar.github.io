@@ -9,12 +9,10 @@
   const header = root.querySelector('.ds-nav');
   const progress = root.querySelector('.ds-reading-progress');
   const photo = root.querySelector('.ds-photo');
-  const motionButton = root.querySelector('.ds-motion-toggle');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const pointer = matchMedia('(hover: hover) and (pointer: fine)');
-  let userMotion = true, motion = false, frame = 0, pointerFrame = 0;
+  let motion = false, frame = 0, pointerFrame = 0;
   let pointerPosition = null, headerHeight = header.offsetHeight;
-  try { userMotion = localStorage.getItem('ds-motion') !== 'off'; } catch {}
   const animations = new Set();
   function animate(element, frames, options) {
     if (!motion || !element.animate) return;
@@ -28,20 +26,15 @@
     photo?.classList.remove('is-tilting');
   }
   function updateMotion() {
-    motion = userMotion && !reduce.matches;
+    motion = !reduce.matches;
     root.dataset.motion = motion ? 'on' : 'off';
     document.documentElement.dataset.motion = root.dataset.motion;
-    motionButton.hidden = false;
-    motionButton.disabled = reduce.matches;
-    motionButton.setAttribute('aria-pressed', String(motion));
-    motionButton.textContent = reduce.matches ? 'Reduced motion' : `Motion ${motion ? 'on' : 'off'}`;
     if (!motion) {
       animations.forEach(animation => animation.cancel());
       root.classList.remove('pointer-active');
       resetPhoto();
     }
   }
-  motionButton.addEventListener('click', () => { userMotion = !userMotion; try { localStorage.setItem('ds-motion', userMotion ? 'on' : 'off'); } catch {} updateMotion(); });
   reduce.addEventListener('change', updateMotion);
   pointer.addEventListener('change', () => {
     if (!pointer.matches) { root.classList.remove('pointer-active'); resetPhoto(); }
