@@ -288,3 +288,21 @@ a:focus-visible,summary:focus-visible{outline:3px solid #cf795f;outline-offset:6
 @media(max-width:1000px){#dakshita-studio .ds-page-cards{grid-template-columns:repeat(2,minmax(0,1fr))}#dakshita-studio .ds-section{gap:35px;grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr)}#dakshita-studio .ds-hero-grid{gap:35px}#dakshita-studio .ds-nav nav{gap:18px}}
 @media(max-width:800px){#dakshita-studio .ds-hero-grid,#dakshita-studio .ds-section,#dakshita-studio .ds-speaking-layout,#dakshita-studio .ds-contact-section{grid-template-columns:1fr}#dakshita-studio .ds-section-heading{position:static}#dakshita-studio .ds-photo{max-width:340px}#dakshita-studio .ds-hero-grid{gap:30px}#dakshita-studio .ds-hero{min-height:0}#dakshita-studio .ds-intro{max-width:none}#dakshita-studio .ds-body{max-width:65ch}#dakshita-studio .ds-projects{grid-template-columns:1fr}#dakshita-studio .ds-work-section .ds-section-heading{display:block}#dakshita-studio .ds-work-section .ds-section-heading>p{display:block}#dakshita-studio .ds-about-section,#dakshita-studio .ds-contact-section{min-height:0}#dakshita-studio .ds-contact-section{gap:30px}#dakshita-studio .ds-nav nav a{font-size:12px}#dakshita-studio .ds-explore-heading{display:block}#dakshita-studio .ds-explore-heading h2{margin-top:12px}}
 @media(max-width:600px){#dakshita-studio .ds-nav{align-items:center;gap:20px}#dakshita-studio .ds-nav nav{display:grid;grid-template-columns:repeat(3,auto);column-gap:18px;row-gap:0}#dakshita-studio .ds-nav nav a{min-height:36px;font-size:11px}#dakshita-studio .ds-nav .ds-monogram{padding:0}#dakshita-studio .ds-intro h1{font-size:clamp(62px,16vw,92px);margin:12px 0 24px}#dakshita-studio .ds-lead{font-size:30px}#dakshita-studio .ds-page-title{font-size:44px}#dakshita-studio .ds-section,#dakshita-studio .ds-notes-section,#dakshita-studio .ds-contact-section{padding-top:36px;padding-bottom:44px}#dakshita-studio .ds-page-cards{grid-template-columns:1fr}#dakshita-studio .ds-page-card h3{margin-top:22px}#dakshita-studio .ds-project,#dakshita-studio .ds-project+.ds-project{padding:22px}#dakshita-studio .ds-project-meta{font-size:9px;letter-spacing:.6px}#dakshita-studio .ds-explore{padding-top:40px;padding-bottom:44px}#dakshita-studio .ds-photo{width:85%;max-width:320px}#dakshita-studio .ds-next-page{flex-wrap:wrap}#dakshita-studio .ds-next-page a{font-size:22px}#dakshita-studio .ds-role p{font-size:15px}}
+
+/* Consistent link arrows across system fonts and mobile browsers. */
+#dakshita-studio .ds-icon{display:inline-block;width:18px;height:18px;flex:0 0 18px;vertical-align:middle;pointer-events:none}
+#dakshita-studio :is(.ds-external-arrow,.ds-link-arrow){display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;line-height:0}
+#dakshita-studio .ds-hero-social a,#dakshita-studio .ds-contact-links>div a,#dakshita-studio .ds-back-top{display:inline-flex;align-items:center;gap:7px}
+#dakshita-studio .ds-email{align-items:center}
+#dakshita-studio .ds-watch-bar>span:last-child{display:inline-flex;align-items:center;gap:8px}
+#dakshita-studio .ds-hello{white-space:nowrap;max-width:none}
+#dakshita-studio .ds-hello .ds-icon{width:14px;height:14px}
+#dakshita-studio .ds-margin-note .ds-icon{margin-left:4px}
+@media(max-width:600px){
+ #dakshita-studio .ds-icon{width:16px;height:16px;flex-basis:16px}
+ #dakshita-studio .ds-work-link{gap:12px}
+ #dakshita-studio .ds-next-page a{gap:12px;min-height:44px}
+ #dakshita-studio .ds-hello{font-size:12px}
+ #dakshita-studio .ds-email{gap:10px}
+}
+@media(hover:none){#dakshita-studio[data-motion="on"] a:is(:hover,:focus-visible) :is(.ds-external-arrow,.ds-link-arrow){transform:none}}

@@ -35,7 +35,7 @@
  #dakshita-studio[data-motion="on"] .ds-name-sketch:hover .ds-name-spark{transform:rotate(99deg) scale(1.06)}
  #dakshita-studio[data-motion="on"] .ds-page-card:is(:hover,:focus-visible) .ds-card-doodle{transform:rotate(6deg) translateY(-3px)}
  #dakshita-studio[data-motion="on"] .ds-page-card:is(:hover,:focus-visible){transform:translateY(-4px) rotate(-.6deg)}
- #dakshita-studio[data-motion="on"] .ds-next-page a:is(:hover,:focus-visible)>span{transform:translate(4px,-4px) rotate(8deg)}
+ #dakshita-studio[data-motion="on"] .ds-next-page a:is(:hover,:focus-visible)>span{transform:translateX(3px)}
 }
 #dakshita-studio[data-motion="off"] .ds-page-card:is(:hover,:focus-visible){transform:none}
 @media(max-width:800px){#dakshita-studio .ds-photo-loop{left:-30px;top:-42px;width:65px;height:65px}}

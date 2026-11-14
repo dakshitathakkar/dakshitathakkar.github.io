@@ -40,7 +40,7 @@ html{scroll-padding-top:calc(var(--ds-header-height,100px) + 24px)}
   #dakshita-studio[data-motion="on"] .ds-spotlight{transition:opacity 400ms ease}
   #dakshita-studio[data-motion="on"] .ds-external-arrow,#dakshita-studio[data-motion="on"] .ds-work-link>span{transition:transform 180ms ease}
   #dakshita-studio[data-motion="on"] a:is(:hover,:focus-visible) .ds-external-arrow{transform:translate(3px,-3px)}
-  #dakshita-studio[data-motion="on"] .ds-work-link:is(:hover,:focus-visible)>span{transform:translate(4px,4px)}
+  #dakshita-studio[data-motion="on"] .ds-work-link:is(:hover,:focus-visible)>span{transform:translateX(3px)}
 }
 html[data-motion="off"]{scroll-behavior:auto}
 #dakshita-studio[data-motion="off"] *,#dakshita-studio[data-motion="off"] *::before,#dakshita-studio[data-motion="off"] *::after{animation:none!important;transition:none!important}
