@@ -6,6 +6,27 @@
     return;
   }
   const root = document.getElementById('dakshita-studio');
+  const themeButton = root.querySelector('.ds-theme-toggle');
+  function updateTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    const next = theme === 'dark' ? 'light' : 'dark';
+    themeButton.setAttribute('aria-label', `Switch to ${next} mode`);
+    themeButton.title = `Switch to ${next} mode`;
+    themeButton.querySelector('.ds-theme-label').textContent = `${next === 'dark' ? 'Dark' : 'Light'} mode`;
+    document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#182c25' : '#f7f2e8';
+  }
+  if (themeButton) {
+    updateTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+    themeButton.hidden = false;
+    themeButton.addEventListener('click', () => {
+      const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      updateTheme(theme);
+      try { localStorage.setItem('ds-theme', theme); } catch {}
+    });
+    addEventListener('storage', event => {
+      if (event.key === 'ds-theme' || event.key === null) updateTheme(event.newValue === 'dark' ? 'dark' : 'light');
+    });
+  }
   const header = root.querySelector('.ds-nav');
   const progress = root.querySelector('.ds-reading-progress');
   const photo = root.querySelector('.ds-photo');

@@ -8,8 +8,10 @@ Live website: https://dakshitathakkar.github.io/
 
 Pages: `index.html` (home), `work.html`, `experience.html`, `speaking.html`, `about.html`, and `contact.html`.
 
-Edit the relevant HTML page for content. Shared styling and interactions live in `styles.css`, `interactions.css`, `whimsy.css`, and `site.js`. Images live in `images/`. Push changes to `main`; GitHub Pages publishes the repository root. No build step is required.
+Edit the relevant HTML page for content. Shared styling and interactions live in `styles.css`, `interactions.css`, `whimsy.css`, `theme.css`, and `site.js`. Images live in `images/`. Push changes to `main`; GitHub Pages publishes the repository root. No build step is required.
 
 ## Local preview
 
 Run `python3 -m http.server 8000` in this folder, then open http://localhost:8000.
+
+The site defaults to light mode. The header switch saves a visitor’s choice in local storage; `theme-init.js` restores it before the page paints.
